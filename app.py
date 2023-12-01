@@ -112,7 +112,7 @@ def reportsGPT():
     tab1, tab2 = st.tabs(["Speak", "Chat"])
     # Record Audio tab
     with tab1:
-        audio_bytes = audio_recorder()
+        audio_bytes = audio_recorder(text="")
         if audio_bytes:
             st.cache_data.clear()
             #option to replay audio
